@@ -198,6 +198,8 @@ class JudgeClient:
             if not api_key:
                 raise ValueError("OPENAI_API_KEY not found in environment")
             self.api_key = api_key
+            # enterprise gateways may serve the model under a different name
+            self.served_name = os.getenv("READ_OPENAI_MODEL", "").strip() or self.served_name
             self.client = OpenAI(api_key=api_key)
 
         elif self.provider == "anthropic":
@@ -205,6 +207,9 @@ class JudgeClient:
             if not api_key:
                 raise ValueError("ANTHROPIC_API_KEY not found in environment")
             self.api_key = api_key
+            # enterprise gateways may serve the model under a different name;
+            # the SDK itself honors ANTHROPIC_BASE_URL for the endpoint
+            self.served_name = os.getenv("READ_ANTHROPIC_MODEL", "").strip() or self.served_name
             self.client = anthropic.Anthropic(api_key=api_key)
 
         else:
