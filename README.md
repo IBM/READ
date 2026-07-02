@@ -35,7 +35,7 @@ OPENAI_API_KEY=sk-...           # for --models gpt-4o
 ANTHROPIC_API_KEY=sk-ant-...    # for --models claude-sonnet-4-5
 ```
 
-(The 13 RITS-hosted judges are IBM-internal. External users ignore those.)
+The two externally available judges are `gpt-4o` (OpenAI) and `claude-sonnet-4-5` (Anthropic); pass either or both (comma-separated) to `--models`. The 13 RITS-hosted judges listed in `read_toolkit/llm_client.py` are IBM-internal. Enterprise API gateways work out of the box: the Anthropic SDK honors `ANTHROPIC_BASE_URL`, and `READ_OPENAI_MODEL` / `READ_ANTHROPIC_MODEL` override the served model name (e.g. `aws/claude-sonnet-4-5`).
 
 ### 3. Fetch the dataset (~3 min, ~125 MB)
 
@@ -134,6 +134,8 @@ The canonical JSONL contract is documented at `data/schemas/input_schema.json`.
 |----------|--------------|-------|
 | `OPENAI_API_KEY` | `gpt-4o` | Standard OpenAI key. |
 | `ANTHROPIC_API_KEY` | `claude-sonnet-4-5` | Standard Anthropic key. |
+| `ANTHROPIC_BASE_URL` | Optional | Honored natively by the Anthropic SDK; point it at an enterprise gateway. |
+| `READ_OPENAI_MODEL` / `READ_ANTHROPIC_MODEL` | Optional | Override the served model name, e.g. `aws/claude-sonnet-4-5` behind a gateway. |
 | `READ_RITS_BASE` | Any RITS-hosted judge | IBM Research Inference Service endpoint URL. IBM-internal access only; external users use the OpenAI / Anthropic models instead. |
 | `RITS_API_KEY` | Any RITS-hosted judge | Comma-separated keys are accepted and used in round-robin. |
 
