@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use READ, please cite it as below."
+title: "READ: Robustness through Erasure, Ablation and Diagnosis"
+type: software
+authors:
+  - family-names: Kahirov
+    given-names: Adam
+repository-code: "https://github.com/IBM/READ"
+license: Apache-2.0
+version: 0.1.0a1
+date-released: 2026-07-02
+preferred-citation:
+  type: unpublished
+  title: "READ: Diagnosing Policy Grounding in LLM Judges via Causal Erasure"
+  authors:
+    - family-names: Kahirov
+      given-names: Adam
+  year: 2026
+  notes: "Under review (AIES 2026). Code: https://github.com/IBM/READ"

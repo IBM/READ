@@ -1,0 +1,38 @@
+.env
+.env.*
+!env.example
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.venv/
+venv/
+dist/
+build/
+.coverage
+htmlcov/
+
+# Editor / OS
+.DS_Store
+.ipynb_checkpoints/
+.claude/
+.claude-flow/
+.mcp.json
+CLAUDE.md
+.cursor/
+.vscode/
+.worktrees/
+
+# Datasets: fetched by scripts/fetch_data.py, never tracked in git
+data/raw/
+data/policy-corpus/
+data/clause_maps/
+data/PolyGuard/
+
+# Local-only artefacts: experiment outputs, logs, scratch
+results/
+logs/
+*.log
+paper

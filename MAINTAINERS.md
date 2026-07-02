@@ -1,9 +1,5 @@
 # MAINTAINERS
 
-Mo McElaney - mmcelaney@us.ibm.com
-
-JJ Asghar - jja@ibm.com
-
-Joe Sepi - joesepi@ibm.com
-
-Brad Topol - btopol@us.ibm.com
+| Name | GitHub | Email |
+|------|--------|-------|
+| Adam Kahirov | [@aydamdonelly](https://github.com/aydamdonelly) | Adam.Kahirov@ibm.com |
