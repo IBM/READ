@@ -1,0 +1,9 @@
+READ: Robustness through Erasure, Ablation and Diagnosis
+Copyright contributors to the READ project
+
+This product includes software developed at IBM (https://www.ibm.com/).
+
+The benchmark operates on the PolyGuard dataset (Kang et al., NeurIPS 2025
+Datasets & Benchmarks Track), which is fetched from HuggingFace at first use
+and is not redistributed with this software. See the upstream dataset page
+for its license: https://huggingface.co/datasets/AI-Secure/PolyGuard

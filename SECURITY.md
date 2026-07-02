@@ -2,16 +2,17 @@
 
 ## Supported Versions
 
-Use this section to tell people about which versions of your project are
-currently being supported with security updates.
-
 | Version | Supported          |
 | ------- | ------------------ |
-| 5.1.x   | :white_check_mark: |
-| 5.0.x   | :x:                |
-| 4.0.x   | :white_check_mark: |
-| < 4.0   | :x:                |
+| 0.1.x   | :white_check_mark: |
 
 ## Reporting a Vulnerability
 
-To report a security issue, please email $VMTalias with a description of the issue, the steps you took to create the issue, affected versions, and if known, mitigations for the issue. Our vulnerability management team will acknowledge receiving your email within 3 working days. This project follows a 90 day disclosure timeline.
+Please do not open a public issue for security vulnerabilities. Instead,
+report them privately via [GitHub's private vulnerability reporting](https://github.com/IBM/READ/security/advisories/new)
+for this repository. We will acknowledge receipt within 3 working days.
+This project follows a 90 day disclosure timeline.
+
+Note that READ is a research companion released as-is; there is no
+commitment of long-term support, but reported vulnerabilities will be
+addressed on a best-effort basis.
